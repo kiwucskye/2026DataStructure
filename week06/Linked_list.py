@@ -1,4 +1,4 @@
-class Pokemon:
+cclass Pokemon:
     # def __init__(self, hp, type, name):
     def __init__(self, hp, type, name=None):  # default parameter 값으로 None 할당
         self.name = name
