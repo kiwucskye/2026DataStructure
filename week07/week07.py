@@ -27,10 +27,12 @@ class LinkedList:
         current.next = Node(data)
 
 
-ll = LinkedList()
-ll.append('꼬부기')
-ll.append('피카츄')
-ll.append('파이리')
-# print(ll.head.data)
-# print(ll.head.next.data)
-print(ll.head.next.next.data)
+    def __str__(self):
+        return f'[{self.head.data}]'
+
+
+pokemons = LinkedList()
+pokemons.append('꼬부기')  # head
+pokemons.append('피카츄')
+pokemons.append('파이리')
+print(pokemons)  # <__main__.LinkedList object at 0x000002BDD72C7230>
