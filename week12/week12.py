@@ -12,6 +12,12 @@ class Stack:
         #return self.items[-1]
         return self.items[len(self.items)-1]
 
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def size(self):
+        return len(self.items)
+
 subjects = Stack()
 artists = Stack()
 artists.push("핑클")
@@ -21,3 +27,6 @@ artists.push("SES")
 print(subjects.pop())
 print(subjects.peek())  # top 원소 확인
 print(artists.peek())
+print(artists.size())
+print(subjects.size())
+print(artists.is_empty())
